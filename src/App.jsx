@@ -7,6 +7,7 @@ import Navbar from './MyRouters/Navbar'
 import PageNotFound from './MyRouters/PageNotFound'
 import Employee from './MyRouters/Employee'
 import Contact from './MyRouters/Contact'
+import Search from './MyRouters/Search';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
            <Route path='/' element={<Home />}/>
            <Route path='/about' element={<About />}/>
            <Route path='/contact' element={<Contact />}/>
+           <Route path='/search' element={<Search/>}/>
            <Route path='/employee/:name/:age' element={<Employee />}/>
            {/* <Route path='/*' element={<PageNotFound/>}/> */}
            <Route path='*/' element={<Navigate to='/' />}/>
