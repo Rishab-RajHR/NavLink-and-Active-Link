@@ -1,7 +1,9 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 
 const Employee = () => {
+     const location = useLocation();
+     console.log(location);
     const {name,  age} = useParams();
   return (
     <>
